@@ -1,6 +1,5 @@
 package com.unip.aps;
 
-import com.unip.aps.alert.ErrorDialog;
 import com.unip.aps.service.ServerHandler;
 
 import java.io.IOException;
@@ -17,8 +16,7 @@ public class App {
             // Inicializa a aplicação na porta passada.
             ServerHandler.init(666);
         } catch (IOException e) {
-            e.printStackTrace();
-            new ErrorDialog();
+            System.out.println("Não foi possível inicializar o servidor.");
         }
     }
 }
