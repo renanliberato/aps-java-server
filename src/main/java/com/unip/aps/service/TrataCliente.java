@@ -48,9 +48,7 @@ public class TrataCliente implements Runnable{
      */
     private void sendMessages(String message) {
         ServerHandler.getClientList().forEach((String address, Client client) -> {
-            if (!clientSocket.getRemoteSocketAddress().toString().equals(address)) {
-                client.getStream().println(message);
-            }
+            client.getStream().println(message);
         });
     }
 }
