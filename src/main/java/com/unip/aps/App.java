@@ -1,5 +1,6 @@
 package com.unip.aps;
 
+import com.unip.aps.core.Persistence;
 import com.unip.aps.service.ServerHandler;
 
 import java.io.IOException;
@@ -13,6 +14,8 @@ public class App {
 
     public static void main(String[] args) {
         try {
+            Persistence.getEntityManager();
+            System.out.println("DB iniciado");
             // Inicializa a aplicação na porta passada.
             ServerHandler.init(666);
         } catch (IOException e) {
