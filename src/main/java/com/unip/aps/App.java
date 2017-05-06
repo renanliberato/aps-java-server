@@ -17,7 +17,9 @@ public class App {
             Persistence.getEntityManager();
             System.out.println("DB iniciado");
             // Inicializa a aplicação na porta passada.
-            ServerHandler.init(666);
+            int port = 666;
+            System.out.println("Servidor escutando a porta "+port);
+            ServerHandler.init(port);
         } catch (IOException e) {
             System.out.println("Não foi possível inicializar o servidor.");
         }
