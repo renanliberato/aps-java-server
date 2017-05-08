@@ -9,11 +9,6 @@
     <version>1.0</version>
 
     <dependencies>
-        <!--<dependency>-->
-            <!--<groupId>com.google.guava</groupId>-->
-            <!--<artifactId>guava</artifactId>-->
-            <!--<version>21.0</version>-->
-        <!--</dependency>-->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
@@ -25,10 +20,6 @@
             <version>10.8.2.2</version>
             <scope>runtime</scope>
         </dependency>
-        <!--
-             an slf4j implementation is needed by
-             hibernate so that it could log its *stuff*
-          -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>

@@ -28,8 +28,7 @@ public class TrataCliente implements Runnable{
     public void run() {
         try {
 
-            RequestFilter filter = new RequestFilter();
-            filter.setClient(client);
+            RequestFilter filter = new RequestFilter(client);
 
             Scanner s = new Scanner(this.client.getInputStream());
             while(s.hasNextLine()) {

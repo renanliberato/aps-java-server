@@ -19,7 +19,7 @@ public class MessageListRequestHandler {
 
     private Client client;
 
-    public MessageListRequestHandler(Client client) {
+    public void setClient(Client client) {
         this.client = client;
     }
 
